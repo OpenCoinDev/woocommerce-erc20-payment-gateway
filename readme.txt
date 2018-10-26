@@ -17,7 +17,7 @@ This plugin help you add ERC20 Token Payment Gateway
 3. settings some options
 
 == Frequently Asked Questions ==
-1. how can i got my contract addres?
+1. how can i got my contract address?
 A: you can get it at etherscan.io
 
 
