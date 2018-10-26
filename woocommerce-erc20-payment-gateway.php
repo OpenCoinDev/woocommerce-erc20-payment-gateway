@@ -24,7 +24,7 @@ include_once 'includes/create-new-currency.php';
 function inkerk_erc20_load_textdomain() {
 	load_plugin_textdomain('woocommerce-erc20-payment-gateway', false, basename(dirname(__FILE__)) . '/lang');
 }
-add_action('init', 'inkerk_erc20__load_textdomain');
+add_action('init', 'inkerk_erc20_load_textdomain');
 add_filter('woocommerce_payment_gateways', 'inkerk_erc20_add_gateway_class');
 function inkerk_erc20_add_gateway_class($gateways) {
 	$gateways[] = 'WC_Inkerk_Erc20_Gateway';
