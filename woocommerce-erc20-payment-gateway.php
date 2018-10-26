@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin Name: WooCommerce ERC20 Payment Gateway
- * Version: 1.0
+ * Version: 0.0.1
  * Plugin URI: http://www.inkerk.com/woocommerce-erc20-payment-gateway
  * Description: This Plugin will add ERC20 Token Payment Gateway
  * Author: Inkerk Inc.
