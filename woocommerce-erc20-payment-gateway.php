@@ -106,7 +106,7 @@ function inkerk_erc20_init_gateway_class() {
 				'symbol' => array(
 					'title' => __('Symbol', 'woocommerce-erc20-payment-gateway'),
 					'type' => 'text',
-					'description' => __('Symbol will show on site,before price.'),
+					'description' => __('Symbol will show on site,before price.', 'woocommerce-erc20-payment-gateway'),
 					'default' => '$',
 				),
 				'title' => array(

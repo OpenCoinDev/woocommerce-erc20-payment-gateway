@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce ERC20 Payment Gateway\n"
-"POT-Creation-Date: 2018-10-27 20:31+0800\n"
-"PO-Revision-Date: 2018-10-27 20:31+0800\n"
+"POT-Creation-Date: 2018-10-27 20:56+0800\n"
+"PO-Revision-Date: 2018-10-27 20:57+0800\n"
 "Last-Translator: Bestony <xiqingongzi@gmail.com>\n"
 "Language-Team: Bestony <xiqingongzi@gmail.com>\n"
 "Language: zh_CN\n"
@@ -20,102 +20,98 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: includes/register-plugin-settings.php:3
-msgid "Settings"
-msgstr "设置"
-
-#: woocommerce-erc20-payment-gateway.php:42
+#: woocommerce-erc20-payment-gateway.php:47
 msgid "Order payment completed"
 msgstr "订单支付完成"
 
-#: woocommerce-erc20-payment-gateway.php:61
+#: woocommerce-erc20-payment-gateway.php:66
 msgid "Pay with ERC20 Token"
 msgstr "使用 ERC20 Token 支付"
 
-#: woocommerce-erc20-payment-gateway.php:62
+#: woocommerce-erc20-payment-gateway.php:67
 msgid "Use Token Payment"
 msgstr "使用 Token 完成支付"
 
-#: woocommerce-erc20-payment-gateway.php:63
+#: woocommerce-erc20-payment-gateway.php:68
 msgid ""
 "If you want to use this Payment Gateway, We suggest you read <a href=\"#"
 "\">our guide </a> before."
 msgstr ""
 "如果您想使用此支付网关，我们建议您之前阅读<a href=“#”>我们的指南</a> 。"
 
-#: woocommerce-erc20-payment-gateway.php:96
+#: woocommerce-erc20-payment-gateway.php:101
 msgid "Enable/Disable"
 msgstr "开启/关闭"
 
-#: woocommerce-erc20-payment-gateway.php:97
+#: woocommerce-erc20-payment-gateway.php:102
 msgid "Enable ERC20 Payment Gateway"
 msgstr "启用ERC20支付网关"
 
-#: woocommerce-erc20-payment-gateway.php:102
+#: woocommerce-erc20-payment-gateway.php:107
 msgid "Symbol"
 msgstr "货币符号"
 
-#: woocommerce-erc20-payment-gateway.php:104
+#: woocommerce-erc20-payment-gateway.php:109
 msgid "Symbol will show on site,before price."
 msgstr "货币符号将会展示在价格前。"
 
-#: woocommerce-erc20-payment-gateway.php:108
+#: woocommerce-erc20-payment-gateway.php:113
 msgid "Title"
 msgstr "标题"
 
-#: woocommerce-erc20-payment-gateway.php:110
+#: woocommerce-erc20-payment-gateway.php:115
 msgid "Title Will Show at Checkout Page"
 msgstr "标题将在结帐页面显示"
 
-#: woocommerce-erc20-payment-gateway.php:115
+#: woocommerce-erc20-payment-gateway.php:120
 msgid "Description"
 msgstr "描述"
 
-#: woocommerce-erc20-payment-gateway.php:117
+#: woocommerce-erc20-payment-gateway.php:122
 msgid "Description  Will Show at Checkout Page"
 msgstr "描述将在结帐页面显示"
 
-#: woocommerce-erc20-payment-gateway.php:118
+#: woocommerce-erc20-payment-gateway.php:123
 msgid "Please make sure you already install Metamask && enable it."
 msgstr "请确保您已安装Metamask 并启用它。"
 
-#: woocommerce-erc20-payment-gateway.php:121
+#: woocommerce-erc20-payment-gateway.php:126
 msgid "Wallet Address"
 msgstr "钱包地址"
 
-#: woocommerce-erc20-payment-gateway.php:123
+#: woocommerce-erc20-payment-gateway.php:128
 msgid "Token Will Transfer into this Wallet"
 msgstr "Token 将转移到此钱包"
 
-#: woocommerce-erc20-payment-gateway.php:126
+#: woocommerce-erc20-payment-gateway.php:131
 msgid "Contract ABI"
 msgstr "合约 ABI"
 
-#: woocommerce-erc20-payment-gateway.php:128
+#: woocommerce-erc20-payment-gateway.php:133
 msgid "You Can get ABI From Etherscan.io"
 msgstr "你可以从 Etherscan 得到合约 ABI"
 
-#: woocommerce-erc20-payment-gateway.php:131
+#: woocommerce-erc20-payment-gateway.php:136
 msgid "Contract Address"
 msgstr "合约地址"
 
-#: woocommerce-erc20-payment-gateway.php:135
+#: woocommerce-erc20-payment-gateway.php:140
 msgid "Payment icon"
 msgstr "支付方式图标"
 
-#: woocommerce-erc20-payment-gateway.php:138
+#: woocommerce-erc20-payment-gateway.php:143
 msgid "Image Height:25px"
 msgstr "建议图片高度：25px"
 
-#: woocommerce-erc20-payment-gateway.php:181
+#: woocommerce-erc20-payment-gateway.php:186
 msgid "create order ,wait for payment"
 msgstr "订单创建完成，等待付款。"
 
-#: woocommerce-erc20-payment-gateway.php:182
+#: woocommerce-erc20-payment-gateway.php:187
 msgid "Wait For Payment"
 msgstr "等待支付"
 
-#: woocommerce-erc20-payment-gateway.php:193
+#: woocommerce-erc20-payment-gateway.php:198
 #, php-format
 msgid ""
 "<strong>%s</strong> is enabled and WooCommerce is not forcing the SSL "
@@ -124,25 +120,29 @@ msgid ""
 "secured.</a>"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:205
+#: woocommerce-erc20-payment-gateway.php:210
 msgid "<h2 class=\"h2thanks\">Use Metamask Pay this Order</h2>"
 msgstr "<h2 class=\"h2thanks\">使用 Metamask 支付订单</h2>"
 
-#: woocommerce-erc20-payment-gateway.php:206
+#: woocommerce-erc20-payment-gateway.php:211
 msgid "Click Button Below, Pay this order.<br>"
 msgstr "点击下方的按钮，并支付订单.<br>"
 
-#: woocommerce-erc20-payment-gateway.php:207
+#: woocommerce-erc20-payment-gateway.php:212
 msgid "Open Metamask"
 msgstr "打开 Metamask 支付"
 
-#: woocommerce-erc20-payment-gateway.php:210
+#: woocommerce-erc20-payment-gateway.php:215
 msgid "<h2>Your Order is already Payment done.</h2>"
 msgstr "<h2>您的订单已经支付完成</h2>"
 
-#: woocommerce-erc20-payment-gateway.php:217
+#: woocommerce-erc20-payment-gateway.php:222
 msgid "Please Pay for you order at bottom :)"
 msgstr "请留步，还剩下最后的支付！"
+
+#: woocommerce-erc20-payment-gateway.php:239
+msgid "Settings"
+msgstr "设置"
 
 #. Plugin Name of the plugin/theme
 msgid "WooCommerce ERC20 Payment Gateway"
