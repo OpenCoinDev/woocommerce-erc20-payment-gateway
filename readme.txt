@@ -2,6 +2,7 @@
 Contributors: bestony
 Tags: WooCommerce
 Requires at least: 4.9.8
+Tested up to: 4.9.8
 Requires PHP: 7.0
 Stable tag: trunk
 License: Apache License
