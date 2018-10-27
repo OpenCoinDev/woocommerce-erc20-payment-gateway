@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce ERC20 Payment Gateway\n"
-"POT-Creation-Date: 2018-10-26 10:23+0800\n"
+"POT-Creation-Date: 2018-10-27 20:30+0800\n"
 "PO-Revision-Date: 2018-10-26 09:38+0800\n"
 "Last-Translator: Bestony <xiqingongzi@gmail.com>\n"
 "Language-Team: Bestony <xiqingongzi@gmail.com>\n"
@@ -10,20 +10,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.1\n"
-"X-Poedit-Basepath: ..\n"
+"X-Poedit-Basepath: ../\n"
 "X-Poedit-WPHeader: woocommerce-erc20-payment-gateway.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: includes/register-plugin-settings.php:3
 msgid "Settings"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:41
+#: woocommerce-erc20-payment-gateway.php:42
 msgid "Order payment completed"
 msgstr ""
 
@@ -41,71 +42,79 @@ msgid ""
 "\">our guide </a> before."
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:94
+#: woocommerce-erc20-payment-gateway.php:96
 msgid "Enable/Disable"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:95
+#: woocommerce-erc20-payment-gateway.php:97
 msgid "Enable ERC20 Payment Gateway"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:100
+#: woocommerce-erc20-payment-gateway.php:102
+msgid "Symbol"
+msgstr ""
+
+#: woocommerce-erc20-payment-gateway.php:104
+msgid "Symbol will show on site,before price."
+msgstr ""
+
+#: woocommerce-erc20-payment-gateway.php:108
 msgid "Title"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:102
+#: woocommerce-erc20-payment-gateway.php:110
 msgid "Title Will Show at Checkout Page"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:107
+#: woocommerce-erc20-payment-gateway.php:115
 msgid "Description"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:109
+#: woocommerce-erc20-payment-gateway.php:117
 msgid "Description  Will Show at Checkout Page"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:110
+#: woocommerce-erc20-payment-gateway.php:118
 msgid "Please make sure you already install Metamask && enable it."
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:113
+#: woocommerce-erc20-payment-gateway.php:121
 msgid "Wallet Address"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:115
+#: woocommerce-erc20-payment-gateway.php:123
 msgid "Token Will Transfer into this Wallet"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:118
+#: woocommerce-erc20-payment-gateway.php:126
 msgid "Contract ABI"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:120
+#: woocommerce-erc20-payment-gateway.php:128
 msgid "You Can get ABI From Etherscan.io"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:123
+#: woocommerce-erc20-payment-gateway.php:131
 msgid "Contract Address"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:127
+#: woocommerce-erc20-payment-gateway.php:135
 msgid "Payment icon"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:130
+#: woocommerce-erc20-payment-gateway.php:138
 msgid "Image Height:25px"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:173
+#: woocommerce-erc20-payment-gateway.php:181
 msgid "create order ,wait for payment"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:174
+#: woocommerce-erc20-payment-gateway.php:182
 msgid "Wait For Payment"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:185
+#: woocommerce-erc20-payment-gateway.php:193
 #, php-format
 msgid ""
 "<strong>%s</strong> is enabled and WooCommerce is not forcing the SSL "
@@ -114,23 +123,23 @@ msgid ""
 "secured.</a>"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:197
+#: woocommerce-erc20-payment-gateway.php:205
 msgid "<h2 class=\"h2thanks\">Use Metamask Pay this Order</h2>"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:198
+#: woocommerce-erc20-payment-gateway.php:206
 msgid "Click Button Below, Pay this order.<br>"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:199
+#: woocommerce-erc20-payment-gateway.php:207
 msgid "Open Metamask"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:202
+#: woocommerce-erc20-payment-gateway.php:210
 msgid "<h2>Your Order is already Payment done.</h2>"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:209
+#: woocommerce-erc20-payment-gateway.php:217
 msgid "Please Pay for you order at bottom :)"
 msgstr ""
 
