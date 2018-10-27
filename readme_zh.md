@@ -3,6 +3,7 @@
 
 WooCommerce ERC20 Token 支付网关
 
+[![Travis (.org)](https://img.shields.io/travis/inKerk/woocommerce-erc20-payment-gateway.svg)](https://travis-ci.org/inKerk/woocommerce-erc20-payment-gateway)
 [![WordPress plugin](https://img.shields.io/wordpress/plugin/v/woo-erc20-payment-gateway.svg?style=plastic)](https://wordpress.org/plugins/woo-erc20-payment-gateway/)
 [![WordPress plugin rating](https://img.shields.io/wordpress/plugin/r/woo-erc20-payment-gateway.svg?style=plastic)](https://wordpress.org/plugins/woo-erc20-payment-gateway/)
 [![WordPress plugin](https://img.shields.io/wordpress/plugin/dt/woo-erc20-payment-gateway.svg?style=plastic)](https://wordpress.org/plugins/woo-erc20-payment-gateway/)
