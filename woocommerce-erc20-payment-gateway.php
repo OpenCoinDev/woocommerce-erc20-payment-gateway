@@ -17,10 +17,6 @@ if (!defined('ABSPATH')) {
 	exit;
 }
 
-include_once 'includes/register-plugin-settings.php';
-
-// include_once 'includes/create-new-currency.php';
-
 function inkerk_erc20_load_textdomain() {
 	load_plugin_textdomain('woocommerce-erc20-payment-gateway', false, basename(dirname(__FILE__)) . '/lang');
 }
@@ -83,7 +79,7 @@ function inkerk_erc20_init_gateway_class() {
 			add_action('woocommerce_thankyou', array($this, 'thankyou_page'));
 			add_filter('woocommerce_currencies', array($this, 'inkerk_add_my_currency'));
 			add_filter('woocommerce_currency_symbol', array($this, 'inkerk_add_my_currency_symbol'), 10, 2);
-
+			add_filter('plugin_action_links_' . plugin_basename(__FILE__), 'inkerk_erc20_add_settings_link');
 		}
 
 		/**
@@ -229,6 +225,11 @@ function inkerk_erc20_init_gateway_class() {
 				break;
 			}
 			return $currency_symbol;
+		}
+		public function inkerk_erc20_add_settings_link($links) {
+			$settings_link = '<a href="admin.php?page=wc-settings&tab=checkout">' . __('Settings') . '</a>';
+			array_push($links, $settings_link);
+			return $links;
 		}
 
 	}
