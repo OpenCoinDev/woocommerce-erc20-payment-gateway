@@ -148,9 +148,9 @@ function inkerk_erc20_init_gateway_class() {
 			add_action('admin_notices', array($this, 'do_ssl_check'));
 			add_action('woocommerce_email_before_order_table', array($this, 'email_instructions'), 10, 3);
 			add_action('woocommerce_thankyou', array($this, 'thankyou_page'));
-			add_filter('the_title', array($this, 'title_order_received'), 10, 2);
-			add_filter('woocommerce_currencies', array($this, 'inkerk_add_my_currency'));
-			add_filter('woocommerce_currency_symbol', array($this, 'inkerk_add_my_currency_symbol'), 10, 2);
+			add_filter('the_title', array($this, 'order_received'), 10, 2);
+			add_filter('woocommerce_currencies', array($this, 'add_my_currency'));
+			add_filter('woocommerce_currency_symbol', array($this, 'add_my_currency_symbol'), 10, 2);
 		}
 
 		/**
@@ -317,7 +317,7 @@ function inkerk_erc20_init_gateway_class() {
 		/**
 		 * 设置 thankyou 页面的 title
 		 */
-		public function title_order_received($title, $id) {
+		public function order_received($title, $id) {
 			if (function_exists('is_order_received_page') &&
 				is_order_received_page() && get_the_ID() === $id) {
 				$title = __('Please Pay for you order at bottom :)', 'woocommerce-erc20-payment-gateway');
@@ -328,14 +328,14 @@ function inkerk_erc20_init_gateway_class() {
 		/**
 		 * 添加新的货币
 		 */
-		public function inkerk_add_my_currency($currencies) {
+		public function add_my_currency($currencies) {
 			$currencies['ERC20'] = 'ERC20';
 			return $currencies;
 		}
 		/**
 		 * 设置货币的 Symbol
 		 */
-		public function inkerk_add_my_currency_symbol($currency_symbol, $currency) {
+		public function add_my_currency_symbol($currency_symbol, $currency) {
 			switch ($currency) {
 			case 'ERC20':$currency_symbol = $this->symbol;
 				break;
