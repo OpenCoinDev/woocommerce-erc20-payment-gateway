@@ -148,7 +148,6 @@ function inkerk_erc20_init_gateway_class() {
 			add_action('admin_notices', array($this, 'do_ssl_check'));
 			add_action('woocommerce_email_before_order_table', array($this, 'email_instructions'), 10, 3);
 			add_action('woocommerce_thankyou', array($this, 'thankyou_page'));
-			add_filter('the_title', array($this, 'order_received'), 10, 2);
 			add_filter('woocommerce_currencies', array($this, 'add_my_currency'));
 			add_filter('woocommerce_currency_symbol', array($this, 'add_my_currency_symbol'), 10, 2);
 		}
@@ -312,17 +311,6 @@ function inkerk_erc20_init_gateway_class() {
 				 */
 				echo __('<h2>Your Order is already Payment done.</h2>', 'woocommerce-erc20-payment-gateway');
 			}
-
-		}
-		/**
-		 * 设置 thankyou 页面的 title
-		 */
-		public function order_received($title, $id) {
-			if (function_exists('is_order_received_page') &&
-				is_order_received_page() && get_the_ID() === $id) {
-				$title = __('Please Pay for you order at bottom :)', 'woocommerce-erc20-payment-gateway');
-			}
-			return $title;
 
 		}
 		/**
