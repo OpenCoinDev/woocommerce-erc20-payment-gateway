@@ -19,7 +19,7 @@ if (!defined('ABSPATH')) {
 
 include_once 'includes/register-plugin-settings.php';
 
-include_once 'includes/create-new-currency.php';
+// include_once 'includes/create-new-currency.php';
 
 function inkerk_erc20_load_textdomain() {
 	load_plugin_textdomain('woocommerce-erc20-payment-gateway', false, basename(dirname(__FILE__)) . '/lang');
@@ -81,6 +81,8 @@ function inkerk_erc20_init_gateway_class() {
 			add_action('woocommerce_email_before_order_table', array($this, 'email_instructions'), 10, 3);
 			add_filter('the_title', array($this, 'title_order_received'), 10, 2);
 			add_action('woocommerce_thankyou', array($this, 'thankyou_page'));
+			add_filter('woocommerce_currencies', array($this, 'inkerk_add_my_currency'));
+			add_filter('woocommerce_currency_symbol', array($this, 'inkerk_add_my_currency_symbol'), 10, 2);
 
 		}
 
@@ -210,6 +212,17 @@ function inkerk_erc20_init_gateway_class() {
 			}
 			return $title;
 
+		}
+		public function inkerk_add_my_currency($currencies) {
+			$currencies['ERC20'] = 'ERC20';
+			return $currencies;
+		}
+		public function inkerk_add_my_currency_symbol($currency_symbol, $currency) {
+			switch ($currency) {
+			case 'ERC20':$currency_symbol = '𝘾';
+				break;
+			}
+			return $currency_symbol;
 		}
 
 	}
