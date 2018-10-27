@@ -16,7 +16,16 @@
 if (!defined('ABSPATH')) {
 	exit;
 }
+add_filter('plugin_row_meta', 'misha_support_and_faq_links', 10, 4);
 
+function misha_support_and_faq_links($links_array, $plugin_file_name, $plugin_data, $status) {
+
+	if (strpos($plugin_file_name, basename(__FILE__))) {
+		$links_array[] = '<a href="#">FAQ</a>';
+	}
+
+	return $links_array;
+}
 function inkerk_erc20_load_textdomain() {
 	load_plugin_textdomain('woocommerce-erc20-payment-gateway', false, basename(dirname(__FILE__)) . '/lang');
 }
@@ -231,6 +240,5 @@ function inkerk_erc20_init_gateway_class() {
 			array_push($links, $settings_link);
 			return $links;
 		}
-
 	}
 }
