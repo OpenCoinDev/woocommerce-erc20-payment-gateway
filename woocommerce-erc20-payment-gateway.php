@@ -98,6 +98,12 @@ function inkerk_erc20_init_gateway_class() {
 					'type' => 'checkbox',
 					'default' => 'no',
 				),
+				'symbol' => array(
+					'title' => __('Symbol', 'woocommerce-erc20-payment-gateway'),
+					'type' => 'text',
+					'description' => __('Symbol will show on site,before price.'),
+					'default' => '$',
+				),
 				'title' => array(
 					'title' => __('Title', 'woocommerce-erc20-payment-gateway'),
 					'type' => 'text',
@@ -219,7 +225,7 @@ function inkerk_erc20_init_gateway_class() {
 		}
 		public function inkerk_add_my_currency_symbol($currency_symbol, $currency) {
 			switch ($currency) {
-			case 'ERC20':$currency_symbol = '𝘾';
+			case 'ERC20':$currency_symbol = $this->symbol;
 				break;
 			}
 			return $currency_symbol;
