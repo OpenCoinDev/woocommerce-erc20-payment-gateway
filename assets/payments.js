@@ -1,9 +1,20 @@
 function requestPayment(token) {
-	if (typeof web3 !== 'undefined') {
+	if (window.ethereum){
+        window.web3 = new Web3(ethereum);
+        try {
+            ethereum.enable();
+        } catch (error) {
+        	console.log(error)
+        }
+
+	}else if (window.web3){
 		web3 = new Web3(web3.currentProvider);
-	} else {
-		alert("请先安装 Metamask !");
 	}
+	else {
+        alert("Please Install Metamask at First！")
+        return ;
+    }
+
 	var xmlhttp;
 	var formData = new FormData();
 	if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
