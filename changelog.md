@@ -1,5 +1,10 @@
 ## Changelog
 
+### 0.0.3
+
+1. delete some code which change checkout page title.
+2. fix metamask breaking changes at #5
+
 ### 0.0.2
 
 1. reformat code
