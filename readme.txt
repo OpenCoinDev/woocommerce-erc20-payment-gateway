@@ -4,7 +4,7 @@ Tags: WooCommerce
 Requires at least: 4.9.8
 Tested up to: 4.9.8
 Requires PHP: 7.0
-Stable tag: trunk
+Stable tag: 0.0.4
 License: Apache License
 
 A WooCommerce ERC20 Token Payment Gateway
@@ -26,6 +26,7 @@ A: you can get it at etherscan.io
 == Changelog ==
 === 0.0.4 ===
 1. add gas notice
+2. remove currency settings ,pls use WooCommerce Customize ERC20 Currency Plugin
 
 === 0.0.3 ===
 1. delete some code which change checkout page title.

@@ -3,6 +3,7 @@
 ### 0.0.4
 
 1. add gas notice
+2. remove currency settings ,pls use WooCommerce Customize ERC20 Currency Plugin
 
 ### 0.0.3
 

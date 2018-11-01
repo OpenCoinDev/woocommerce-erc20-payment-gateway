@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin Name: WooCommerce ERC20 Payment Gateway
- * Version: 0.0.3
+ * Version: 0.0.4
  * Plugin URI: http://www.inkerk.com/woocommerce-erc20-payment-gateway
  * Description: This Plugin will add ERC20 Token Payment Gateway
  * Author: Inkerk Inc.
@@ -148,8 +148,7 @@ function inkerk_erc20_init_gateway_class() {
 			add_action('admin_notices', array($this, 'do_ssl_check'));
 			add_action('woocommerce_email_before_order_table', array($this, 'email_instructions'), 10, 3);
 			add_action('woocommerce_thankyou', array($this, 'thankyou_page'));
-			add_filter('woocommerce_currencies', array($this, 'add_my_currency'));
-			add_filter('woocommerce_currency_symbol', array($this, 'add_my_currency_symbol'), 10, 2);
+
 		}
 
 		/**
@@ -318,25 +317,6 @@ function inkerk_erc20_init_gateway_class() {
 				 */
 				echo __('<h2>Your Order is already Payment done.</h2>', 'woocommerce-erc20-payment-gateway');
 			}
-
 		}
-		/**
-		 * 添加新的货币
-		 */
-		public function add_my_currency($currencies) {
-			$currencies['ERC20'] = 'ERC20';
-			return $currencies;
-		}
-		/**
-		 * 设置货币的 Symbol
-		 */
-		public function add_my_currency_symbol($currency_symbol, $currency) {
-			switch ($currency) {
-			case 'ERC20':$currency_symbol = $this->symbol;
-				break;
-			}
-			return $currency_symbol;
-		}
-
 	}
 }
