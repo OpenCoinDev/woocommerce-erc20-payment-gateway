@@ -5,6 +5,7 @@
 [![WordPress plugin](https://img.shields.io/wordpress/plugin/v/woo-erc20-payment-gateway.svg?style=plastic)](https://wordpress.org/plugins/woo-erc20-payment-gateway/)
 [![WordPress plugin rating](https://img.shields.io/wordpress/plugin/r/woo-erc20-payment-gateway.svg?style=plastic)](https://wordpress.org/plugins/woo-erc20-payment-gateway/)
 [![WordPress plugin](https://img.shields.io/wordpress/plugin/dt/woo-erc20-payment-gateway.svg?style=plastic)](https://wordpress.org/plugins/woo-erc20-payment-gateway/)
+[![](https://img.shields.io/badge/Slack-join--us-brightgreen.svg)](https://join.slack.com/t/inkerk/shared_invite/enQtNDcwNTU3ODE0MTUxLWU5MzMzNThiNGY4MjkxOTAyNzFkYzkyNjgyNjZmOTNlOTA2ZTExZmY5YjdhZTA0ZTFlMjQ1ZDlmNThkYTM4MjQ)
 
 
 
