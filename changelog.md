@@ -1,5 +1,9 @@
 ## Changelog
 
+### 0.0.4
+
+1. add gas notice
+
 ### 0.0.3
 
 1. delete some code which change checkout page title.

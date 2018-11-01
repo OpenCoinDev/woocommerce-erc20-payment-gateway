@@ -24,6 +24,9 @@ A: you can get it at etherscan.io
 
 
 == Changelog ==
+=== 0.0.4 ===
+1. add gas notice
+
 === 0.0.3 ===
 1. delete some code which change checkout page title.
 2. fix metamask breaking changes at #5
