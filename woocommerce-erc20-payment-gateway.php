@@ -203,6 +203,12 @@ function inkerk_erc20_init_gateway_class() {
 					'default' => 'https://postimg.aliavv.com/newmbp/eb9ty.png',
 					'description' => __('Image Height:25px', 'woocommerce-erc20-payment-gateway'),
 				),
+				'gas_notice' => array(
+					'title' => __('Gas Notice', 'woocommerce-erc20-payment-gateway'),
+					'type' => 'textarea',
+					'default' => __('Set a High Gas Price to speed up your transaction.', 'woocommerce-erc20-payment-gateway'),
+					'description' => __('Tell Custome set a high gas price to speed up transaction.', 'woocommerce-erc20-payment-gateway'),
+				),
 			);
 			$this->form_fields += array(
 
@@ -303,7 +309,8 @@ function inkerk_erc20_init_gateway_class() {
 				echo '<script>var order_id = ' . $order_id . ';var contract_address = "' . (string) $this->contract_address . '";var abiArray = ' . $this->abi_array . '; var target_address = "' . $this->target_address . '"; </script>';
 				echo __('<h2 class="h2thanks">Use Metamask Pay this Order</h2>', 'woocommerce-erc20-payment-gateway');
 				echo __('Click Button Below, Pay this order.<br>', 'woocommerce-erc20-payment-gateway');
-				echo '<button onclick="requestPayment(' . (string) $order->get_total() . ')">' . __('Open Metamask', 'woocommerce-erc20-payment-gateway') . '</button>';
+				echo '<span style="margin:5px 0px;">' . $this->gas_notice . "</span><br>";
+				echo '<div><button onclick="requestPayment(' . (string) $order->get_total() . ')">' . __('Open Metamask', 'woocommerce-erc20-payment-gateway') . '</button></div>';
 
 			} else {
 				/**
