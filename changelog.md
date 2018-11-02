@@ -1,5 +1,9 @@
 ## Changelog
 
+### 0.0.5
+
+1.  fixed `class 'WC_Inkerk_Erc20_Gateway' does not have a method 'email_instructions'`
+
 ### 0.0.4
 
 1. add gas notice
