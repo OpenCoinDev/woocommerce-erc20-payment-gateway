@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce ERC20 Payment Gateway\n"
-"POT-Creation-Date: 2018-11-02 07:58+0800\n"
+"POT-Creation-Date: 2018-11-03 09:38+0800\n"
 "PO-Revision-Date: 2018-10-26 09:38+0800\n"
 "Last-Translator: Bestony <xiqingongzi@gmail.com>\n"
 "Language-Team: Bestony <xiqingongzi@gmail.com>\n"
@@ -38,95 +38,88 @@ msgstr ""
 
 #: woocommerce-erc20-payment-gateway.php:125
 msgid ""
-"If you want to use this Payment Gateway, We suggest you read <a href=\"#"
-"\">our guide </a> before."
+"If you want to use this Payment Gateway, We suggest you read <a href="
+"\"https://inkerk.github.io/blog/2018/11/01/woocommerce-erc20-payment-gateway-"
+"plugin/\">our guide </a> before."
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:161
+#: woocommerce-erc20-payment-gateway.php:160
 msgid "Enable/Disable"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:162
+#: woocommerce-erc20-payment-gateway.php:161
 msgid "Enable ERC20 Payment Gateway"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:167
-msgid "Symbol"
-msgstr ""
-
-#: woocommerce-erc20-payment-gateway.php:169
-msgid "Symbol will show on site,before price."
-msgstr ""
-
-#: woocommerce-erc20-payment-gateway.php:173
+#: woocommerce-erc20-payment-gateway.php:166
 msgid "Title"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:175
+#: woocommerce-erc20-payment-gateway.php:168
 msgid "Title Will Show at Checkout Page"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:180
+#: woocommerce-erc20-payment-gateway.php:173
 msgid "Description"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:182
+#: woocommerce-erc20-payment-gateway.php:175
 msgid "Description  Will Show at Checkout Page"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:183
+#: woocommerce-erc20-payment-gateway.php:176
 msgid "Please make sure you already install Metamask && enable it."
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:186
+#: woocommerce-erc20-payment-gateway.php:179
+msgid "Payment icon"
+msgstr ""
+
+#: woocommerce-erc20-payment-gateway.php:182
+msgid "Image Height:25px"
+msgstr ""
+
+#: woocommerce-erc20-payment-gateway.php:185
 msgid "Wallet Address"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:188
+#: woocommerce-erc20-payment-gateway.php:187
 msgid "Token Will Transfer into this Wallet"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:191
+#: woocommerce-erc20-payment-gateway.php:190
 msgid "Contract ABI"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:193
+#: woocommerce-erc20-payment-gateway.php:192
 msgid "You Can get ABI From Etherscan.io"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:196
+#: woocommerce-erc20-payment-gateway.php:195
 msgid "Contract Address"
 msgstr ""
 
 #: woocommerce-erc20-payment-gateway.php:200
-msgid "Payment icon"
-msgstr ""
-
-#: woocommerce-erc20-payment-gateway.php:203
-msgid "Image Height:25px"
-msgstr ""
-
-#: woocommerce-erc20-payment-gateway.php:206
 msgid "Gas Notice"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:208
+#: woocommerce-erc20-payment-gateway.php:202
 msgid "Set a High Gas Price to speed up your transaction."
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:209
+#: woocommerce-erc20-payment-gateway.php:203
 msgid "Tell Custome set a high gas price to speed up transaction."
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:257
+#: woocommerce-erc20-payment-gateway.php:251
 msgid "create order ,wait for payment"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:261
+#: woocommerce-erc20-payment-gateway.php:255
 msgid "Wait For Payment"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:284
+#: woocommerce-erc20-payment-gateway.php:278
 #, php-format
 msgid ""
 "<strong>%s</strong> is enabled and WooCommerce is not forcing the SSL "
@@ -135,19 +128,19 @@ msgid ""
 "secured.</a>"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:309
+#: woocommerce-erc20-payment-gateway.php:303
 msgid "<h2 class=\"h2thanks\">Use Metamask Pay this Order</h2>"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:310
+#: woocommerce-erc20-payment-gateway.php:304
 msgid "Click Button Below, Pay this order.<br>"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:312
+#: woocommerce-erc20-payment-gateway.php:306
 msgid "Open Metamask"
 msgstr ""
 
-#: woocommerce-erc20-payment-gateway.php:318
+#: woocommerce-erc20-payment-gateway.php:312
 msgid "<h2>Your Order is already Payment done.</h2>"
 msgstr ""
 
@@ -156,7 +149,9 @@ msgid "WooCommerce ERC20 Payment Gateway"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "http://www.inkerk.com/woocommerce-erc20-payment-gateway"
+msgid ""
+"https://inkerk.github.io/blog/2018/11/01/woocommerce-erc20-payment-gateway-"
+"plugin/"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -164,7 +159,7 @@ msgid "This Plugin will add ERC20 Token Payment Gateway"
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "inKerk Blockchain Inc"
+msgid "inKerk Blockchain Inc."
 msgstr ""
 
 #. Author URI of the plugin/theme

@@ -1,8 +1,8 @@
 <?php
 /*
  * Plugin Name: WooCommerce ERC20 Payment Gateway
- * Version: 0.0.5
- * Plugin URI: http://www.inkerk.com/woocommerce-erc20-payment-gateway
+ * Version: 0.0.6
+ * Plugin URI: https://inkerk.github.io/blog/2018/11/01/woocommerce-erc20-payment-gateway-plugin/
  * Description: This Plugin will add ERC20 Token Payment Gateway
  * Author: inKerk Blockchain Inc.
  * Author URI: http://www.inkerk.com/
@@ -28,7 +28,7 @@ function inkerk_add_link_to_plugin_meta($links_array, $plugin_file_name, $plugin
 	if (strpos($plugin_file_name, basename(__FILE__))) {
 		// 在数组最后加入对应的链接
 		// 如果希望显示在前面，可以参考一下 array_unshift 函数。
-		$links_array[] = '<a href="#">FAQ</a>';
+		$links_array[] = '<a href="https://inkerk.github.io/blog/2018/11/01/woocommerce-erc20-payment-gateway-plugin/">FAQ</a>';
 	}
 	return $links_array;
 }
@@ -122,7 +122,7 @@ function inkerk_erc20_init_gateway_class() {
 			/**
 			 * 设置 - 付款 - 支付方式界面展示的支付方式介绍
 			 */
-			$this->method_description = __('If you want to use this Payment Gateway, We suggest you read <a href="#">our guide </a> before.', 'woocommerce-erc20-payment-gateway');
+			$this->method_description = __('If you want to use this Payment Gateway, We suggest you read <a href="https://inkerk.github.io/blog/2018/11/01/woocommerce-erc20-payment-gateway-plugin/">our guide </a> before.', 'woocommerce-erc20-payment-gateway');
 
 			$this->supports = array(
 				'products',
@@ -162,12 +162,6 @@ function inkerk_erc20_init_gateway_class() {
 					'type' => 'checkbox',
 					'default' => 'no',
 				),
-				'symbol' => array(
-					'title' => __('Symbol', 'woocommerce-erc20-payment-gateway'),
-					'type' => 'text',
-					'description' => __('Symbol will show on site,before price.', 'woocommerce-erc20-payment-gateway'),
-					'default' => '$',
-				),
 				'title' => array(
 					'title' => __('Title', 'woocommerce-erc20-payment-gateway'),
 					'type' => 'text',
@@ -180,6 +174,12 @@ function inkerk_erc20_init_gateway_class() {
 					'type' => 'textarea',
 					'description' => __('Description  Will Show at Checkout Page', 'woocommerce-erc20-payment-gateway'),
 					'default' => __('Please make sure you already install Metamask && enable it.', 'woocommerce-erc20-payment-gateway'),
+				),
+				'icon' => array(
+					'title' => __('Payment icon', 'woocommerce-erc20-payment-gateway'),
+					'type' => 'text',
+					'default' => 'https://postimg.aliavv.com/newmbp/eb9ty.png',
+					'description' => __('Image Height:25px', 'woocommerce-erc20-payment-gateway'),
 				),
 				'target_address' => array(
 					'title' => __('Wallet Address', 'woocommerce-erc20-payment-gateway'),
@@ -195,12 +195,7 @@ function inkerk_erc20_init_gateway_class() {
 					'title' => __('Contract Address', 'woocommerce-erc20-payment-gateway'),
 					'type' => 'text',
 				),
-				'icon' => array(
-					'title' => __('Payment icon', 'woocommerce-erc20-payment-gateway'),
-					'type' => 'text',
-					'default' => 'https://postimg.aliavv.com/newmbp/eb9ty.png',
-					'description' => __('Image Height:25px', 'woocommerce-erc20-payment-gateway'),
-				),
+
 				'gas_notice' => array(
 					'title' => __('Gas Notice', 'woocommerce-erc20-payment-gateway'),
 					'type' => 'textarea',

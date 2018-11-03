@@ -10,7 +10,7 @@ License: Apache License
 A WooCommerce ERC20 Token Payment Gateway
 
 == Description ==
-This plugin help you add ERC20 Token Payment Gateway
+This plugin help you add ERC20 Token Payment Gateway.
 
 == Installation ==
 1. donwload plugin
@@ -24,6 +24,8 @@ A: you can get it at etherscan.io
 
 
 == Changelog ==
+=== 0.0.6 ===
+1. add guide link
 === 0.0.5 ===
 1. fixed `class 'WC_Inkerk_Erc20_Gateway' does not have a method 'email_instructions'`
 === 0.0.4 ===
