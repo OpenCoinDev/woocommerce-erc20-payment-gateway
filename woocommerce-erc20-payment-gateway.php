@@ -72,6 +72,9 @@ function inkerk_thankyour_request() {
 		$data = $_POST;
 		$order_id = $data['orderid'];
 		$tx = $data['tx'];
+		if (strlen($tx) != 66 || substr($tx,0,2) != '0x'){
+			return ;
+		}
 		/**
 		 * 获取到订单
 		 */
