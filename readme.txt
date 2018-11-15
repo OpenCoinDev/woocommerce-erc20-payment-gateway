@@ -24,6 +24,8 @@ A: you can get it at etherscan.io
 
 
 == Changelog ==
+=== 0.0.7 === 
+1. Bugfix #7 : Check tx Exist
 === 0.0.6 ===
 1. add guide link
 === 0.0.5 ===
